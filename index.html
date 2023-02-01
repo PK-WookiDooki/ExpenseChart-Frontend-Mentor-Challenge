@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Expense Chart with Html and Css.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="">
+<meta property="og:description" content="Expense Chart with Html and Css.">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/app.css">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+
+  <main>
+      <div class="header">
+        <div class="balance">
+          <span>My balance</span>
+          <h2>$921.48</h2>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+      </div>
+      <div class="chartBox">
+        <h3>Spending - Last 7 days</h3>
+        <div class="chartLists">
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="monBar"></div>
+              <span id="monData"></span>
+            </div>
+            <p id="mon"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="tueBar"></div>
+              <span id="tueData"></span>
+            </div>
+            <p id="tue"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar active" id="wedBar"></div>
+              <span id="wedData"></span>
+            </div>
+            <p id="wed"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="thuBar"></div>
+              <span id="thuData"></span>
+            </div>
+            <p id="thu"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="friBar"></div>
+              <span id="friData"></span>
+            </div>
+            <p id="fri"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="satBar"></div>
+              <span id="satData"></span>
+            </div>
+            <p id="sat"></p>
+          </div>
+          <div class="chartBar">
+            <div class="bar">
+              <div class="cBar" id="sunBar"></div>
+              <span id="sunData"></span>
+            </div>
+            <p id="sun"></p>
+          </div>
+        </div>
+
+        <div class="sData">
+          <div class="spending">
+            <span>Total this month</span>
+            <h2>$478.33</h2>
+          </div>
+          <div class="percent">
+            <h4>+2.4%</h4>
+            <span>from last month</span>
+          </div>  
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/PK-WookiDooki" target="_blank">Wooki Dooki</a>.
+      </div>
+  </main>
+  
+  <script src="./js/data.js"></script>
+</body>
+</html>

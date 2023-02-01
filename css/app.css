@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --sred: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dbrown: hsl(25, 47%, 15%);
+  --cream: hsl(27, 66%, 92%);
+  --white: hsl(33, 100%, 98%);
+}
+body {
+  background-color: var(--cream);
+}
+main {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main > div {
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--sred);
+  color: var(--cream);
+}
+.header img {
+  width: 50px;
+}
+.header span {
+  font-size: 16px;
+}
+.header h2 {
+  font-size: 25px;
+}
+
+.chartBox {
+  background-color: var(--white);
+}
+.chartBox .chartLists {
+  margin-top: -50px;
+  display: flex;
+  /* gap: 15px; */
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  color: var(--dbrown);
+}
+.chartLists .chartBar {
+  height: auto;
+}
+.chartBar .bar {
+  width: 40px;
+  height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.bar span {
+  display: none;
+  transition: 0.3s;
+  padding: 4px 5px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 15px;
+}
+.bar .cBar {
+  background-color: var(--sred);
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cBar:not(.active):hover {
+  background-color: hsl(10, 73%, 73%);
+  transition: 0.3s;
+}
+.cBar.active:hover{
+    background-color: hsl(186, 38%, 66%);
+}
+.cBar:hover ~ span {
+  display: block;
+  transition: 0.3s;
+}
+.bar .active {
+  background-color: var(--cyan);
+}
+.bar #monBar {
+  height: 17.45%;
+}
+.bar #tueBar {
+  height: 34.91%;
+}
+.bar #wedBar {
+  height: 52.36%;
+}
+.bar #thuBar {
+  height: 31.07%;
+}
+.bar #friBar {
+  height: 23.39%;
+}
+.bar #satBar {
+  height: 43.28%;
+}
+.bar #sunBar {
+  height: 25.48%;
+}
+
+.chartBar p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(28, 10%, 53%);
+}
+
+.sData {
+  margin-top: 25px;
+  color: var(--dbrown);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sData span {
+  font-size: 14px;
+  color: hsl(28, 10%, 53%);
+}
+.sData h2 {
+  margin-top: 5px;
+  font-size: 30px;
+}
+.sData h4 {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.attribution {
+margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 450px) {
+  main {
+    width: 90%;
+  }
+  .chartBar .bar {
+    width: 35px;
+  }
+  .bar span {
+    font-size: 12px;
+  }
+  .chartBar p {
+    font-size: 16px;
+  }
+}
